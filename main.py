@@ -18,8 +18,8 @@ for index, row in birthdays.iterrows():
             filename = f"letter_for_{row['name']}.txt"
             with open(filename, "w") as file:
                 file.write(personalized_letter)
-        my_email = "edgarkorsin251@gmail.com"
-        password = "ggev eyaq uoki yqao"
+        my_email = email
+        password = password
         with smtplib.SMTP('smtp.gmail.com', 587) as connection:
             connection.starttls()
             connection.login(user=my_email, password=password)
