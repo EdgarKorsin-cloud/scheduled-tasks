@@ -2,6 +2,7 @@
 import datetime as dt
 import pandas as pd
 import smtplib
+import os
 
 now = dt.datetime.now()
 year = now.year
